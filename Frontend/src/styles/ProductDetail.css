@@ -1,0 +1,342 @@
+/* Główne kontenery */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    min-height: 100vh; /* Wysokość pełnego widoku */
+    box-sizing: border-box;
+  }
+  
+  /* Biały prostokąt dla szczegółów produktu */
+  .product-details {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff; /* Białe tło */
+    border-radius: 14px; /* Zaokrąglenie rogów */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Delikatny cień */
+    border: 1px solid #e0e0e0; /* Opcjonalna ramka */
+  }
+
+  .product-details-content {
+    display: flex;
+    flex-direction: row; /* Obrazek obok treści */
+    gap: 20px;
+    align-items: flex-start; /* Wyrównanie do góry */
+  }  
+  
+  /* Zdjęcie produktu */
+  .product-image {
+    width: auto;
+    height: 200px;
+    border-radius: 14px;
+    object-fit: cover;
+  }
+
+  .product-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+  }
+
+  /* Atrybuty produktu */
+.product-attributes {
+  display: flex; /* Atrybuty obok siebie */
+  flex-direction: column; /* Atrybuty pod sobą */
+  text-align: left; /* Wyrównanie do lewej */
+  font-size: 16px; /* Zmiana rozmiaru czcionki na 16px */
+  line-height: 0; /* Wysokość linii dla lepszej czytelności */
+  color: #000000; /* Zmiana koloru czcionki na ciemny szary */
+}
+
+/* Opis produktu */
+.product-description {
+  text-align: left;
+  margin-top: 20px;
+  font-family: Arial, sans-serif; /* Zmiana czcionki na Arial */
+  font-size: 16px; /* Zmiana rozmiaru czcionki na 16px */
+  font-weight: normal; /* Normalna grubość czcionki */
+  line-height: 1.5; /* Wysokość linii dla lepszej czytelności */
+  color: #000000; /* Zmiana koloru czcionki na ciemny szary */
+}
+
+.product-actions {
+  display: flex;
+  justify-content: center; /* Wyrównanie do środka */
+  gap: 10px; /* Odstęp między przyciskami */
+  margin-top: 10px;
+}
+
+.delete-alcohol-button {
+  padding: 8px 12px;
+  background-color: #e74c3c; /* Czerwony kolor */
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover efekt dla przycisku "Usuń alkohol" */
+.delete-alcohol-button:hover {
+  background-color: #c0392b; /* Ciemniejszy czerwony */
+}
+
+/* ---------OPINION---------- */
+  /* Biały prostokąt dla opinii */
+  .opinions {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff; /* Białe tło */
+    border-radius: 14px; /* Zaokrąglenie rogów */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Delikatny cień */
+    border: 1px solid #e0e0e0; /* Opcjonalna ramka */
+    overflow-y: auto;
+    max-height: calc(100vh - 40px); /* Dopasowanie wysokości do okna */
+  }
+  
+  /* Pojedyncza opinia */
+  .opinion-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 15px; /* Dodajemy padding dla wygody */
+    background-color: #e1dcdc; /* Szary kolor tła */
+    border-radius: 14px; /* Zaokrąglone rogi */
+    border: 1px solid #ddd; /* Delikatna ramka */
+    padding-right: 30px;
+  }
+  
+  .opinion-item p {
+    margin: 5px 0;
+  }
+
+  .opinions ul {
+    list-style-type: "👤"; /* Usuwamy domyślną kropkę */
+  }
+
+  .opinions-header {
+    display: flex;
+    justify-content: space-between; /* Elementy po przeciwnych stronach */
+    align-items: center; /* Wyrównanie elementów w pionie */
+    margin-bottom: 20px; /* Odstęp od listy opinii */
+  }
+
+  .opinions-header a {
+    color: #000000; /* Kolor linku */
+    font-size: 16px; /* Rozmiar czcionki */
+    transition: color 0.3s ease; /* Płynne przejście koloru */
+  }
+
+  .opinions-header a:hover {
+    color: #145aaa; /* Ciemniejszy kolor na hover */
+  }
+
+  .add-opinion-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff; /* Biały tekst */
+    background-color: #8e969e; /* Niebieskie tło */
+    border: none;
+    border-radius: 5px; /* Zaokrąglone rogi */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .add-opinion-button:hover {
+    background-color: #35383b; /* Ciemniejszy niebieski na hover */
+  }
+
+  .opinion-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e1dcdc;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  .opinion-form textarea {
+    width: 97%;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+  }
+  .opinion-form select {
+    padding: 8px;
+    border: 1px solid #bab2b2;
+    border-radius: 5px;
+  }
+  .opinion-form button {
+    align-self: flex-start;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .opinion-form button:hover {
+    background-color: #218838;
+  }
+  .rating-stars {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 0px;
+    font-size: 24px; /* Rozmiar gwiazdek */
+    cursor: pointer;
+  }
+  
+  .rating-stars .star {
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .rating-stars .star.filled {
+    color: gold;
+  }
+
+  .delete-opinion-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 5px 10px;
+    background-color: #e74c3c; /* Czerwony kolor */
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-opinion-button:hover {
+    background-color: #c0392b; /* Ciemniejszy czerwony */
+  }
+  
+  
+/* ----Like button---- */
+.Product_like-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 12px;
+  font-size: 30px;
+  background: none; /* Kolor przycisku */
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease; 
+}
+
+.Product_like-button:hover {
+  background-color: none; /* Zmiana koloru przycisku po najechaniu */
+}
+
+.Product_like-button.liked {
+  background-color: none; /* Zielony kolor dla klikniętego przycisku */
+}
+
+.Product_like-button.liked:hover {
+  background-color: none; /* Ciemniejszy zielony kolor na hover */
+}
+
+/* ------EDIT------ */
+
+/* Styl formularza edycji */
+.edit-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 0px;
+}
+
+.edit-form h3 {
+  margin-bottom: 10px;
+}
+
+.edit-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edit-form label {
+  font-size: 16px;
+  color: #333;
+}
+
+.edit-form input {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 14px;
+  border: 1px solid #adaaaa;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.edit-form textarea {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 14px;
+  border: 1px solid #adaaaa;
+  width: 100%;
+  height: 300px; 
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.edit-form select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #adaaaa;
+  border-radius: 14px;
+  font-size: 16px;
+  box-sizing: border-box; 
+}
+
+.edit-form-button {
+  top: 20px;
+  right: 20px;
+  padding: 5px 10px;
+  background-color: #176fd5;
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.edit-form-button:hover {
+  background-color: #145aaa;
+}
+
+/* Styl dla przycisków formularza edycji */
+.form-buttons {
+  display: flex;
+  justify-content: center; /* Wyrównanie do środka */
+  gap: 10px; /* Odstęp między przyciskami */
+  margin-top: 10px; /* Odstęp od formularza */
+}
+
+.form-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 14px;
+  border: 1px solid #ccc;
+  background-color: #b8b3b3;
+  transition: background-color 0.3s;
+}
+
+.form-buttons button:hover {
+  background-color: #ddd;
+}

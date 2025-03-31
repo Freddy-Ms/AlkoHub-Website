@@ -1,0 +1,220 @@
+@media (max-width: 768px) {
+  .homepage-container {
+    flex-direction: column; /* Na mniejszych ekranach kolumny będą układały się jeden pod drugim */
+  }
+
+  .filter-container {
+    width: 100%; /* Filtry będą zajmować całą szerokość ekranu */
+    margin-bottom: 20px;
+  }
+
+  .product-container {
+    width: 100%; /* Produkty również będą zajmowały całą szerokość */
+  }
+
+  .product-list .product-card {
+    width: 48%; /* Produkty będą zajmowały mniej miejsca, aby były dwa w rzędzie */
+  }
+}
+
+.homepage-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.filter-container {
+  width: 10%; /* Lewa kolumna na filtry */
+  background-color: #ffd89e1c;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
+  text-align: left;
+}
+
+.filter-item {
+  margin-bottom: 10px;
+}
+
+.filter-container h3 {
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  font-size: 26px;
+  color: white;
+}
+
+.filter-container h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  color: white;
+}
+
+.category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Space between buttons */
+  justify-content: space-between;
+}
+
+.category-button {
+  flex-grow: 1;
+  min-width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 14px;
+  background-color: #f1f1f1;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-button.selected {
+  background-color: #108442; /* Selected button color */
+  color: white;
+}
+
+.category-button:hover {
+  background-color: #939393; /* Hover color */
+}
+
+.product-container {
+  width: 80%; /* Prawa kolumna na produkty */
+  margin: auto;
+  padding: 0px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px; /* Dodaj odstępy między elementami */
+}
+
+.product-list .product-card {
+  flex: 1 1 calc(20% - 16px); /* Dynamiczne rozmiary kart (20% szerokości z uwzględnieniem odstępów) */
+  box-sizing: border-box;
+  margin: 8px; /* Drobny margines wokół karty */
+  max-width: calc(20% - 16px); /* Ustaw limit szerokości na 20% kontenera */
+  min-width: 200px; /* Minimalna szerokość dla mniejszych ekranów */
+  background-color: #ffffff; /* Kolor tła karty */
+  border: 1px solid #ccc; /* Obramowanie dla lepszej widoczności */
+  border-radius: 14px;
+  overflow: hidden; /* Ukryj tekst wychodzący poza kartę */
+}
+
+.product-link {
+  text-decoration: none; /* Usuwamy podkreślenie tekstu */
+  color: inherit; /* Dziedziczenie koloru z rodzica */
+  display: block; /* Link obejmuje całą kartę */
+}
+
+.product-card {
+  cursor: pointer;  /* Zmieniamy kursor na wskaźnik, aby sugerować, że element jest klikany */
+}
+
+.product-card img {
+  width: 100%; /* Obraz zajmuje pełną szerokość karty */
+  height: 160px;
+  display: block;
+}
+
+.product-card h3,
+.product-card p {
+  margin: 8px; /* Marginesy dla tekstu */
+  text-overflow: ellipsis; /* Dodaj wielokropki, jeśli tekst jest za długi */
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
+/* ------- ADD PRODUCT -------- */
+.AddProductButton {
+  flex-grow: 1;
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 14px;
+  background-color: #34ad3c;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.AddProductButton:hover {
+  background-color: #2b9432;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.669);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.065);
+  width: 60%;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-content button {
+  margin-top: 10px;
+  flex-grow: 1;
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 14px;
+  background-color: #c1c1c1;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.modal-content button:hover {
+  background-color: #a1a1a1;
+}
+
+.modal-content form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.modal-content form input,
+.modal-content form select,
+.modal-content form textarea {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 98%;
+}
+
+.modal-content form textarea {
+  resize: vertical;
+}

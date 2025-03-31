@@ -1,0 +1,17 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Możesz dostosować padding */
+  background-color: #000000;
+}
+
+.navbar-text {
+  margin: 0 20px; /* Odstęp od przycisków po lewej i prawej stronie */
+  font-size: 30px;
+  color: #ffffff; 
+}
+
+.no-underline {
+  text-decoration: none;
+}

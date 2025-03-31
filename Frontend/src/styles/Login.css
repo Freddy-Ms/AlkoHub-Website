@@ -1,0 +1,41 @@
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
+  text-align: center;
+  color: #ffffff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Odstęp między polami formularza */
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin: 5px 0; /* Odstęp wokół inputów */
+  border-radius: 14px; /* Zaokrąglone rogi dla inputów */
+  border: 1px solid #ccc; /* Obramowanie dla inputów */
+}
+
+/* Zmieniamy kolor tekstu w klasie .text */
+.Login_text {
+  color: #ffffff; /* Możesz zmienić kolor na dowolny */
+}
+
+/* Zmieniamy kolor linku */
+.Login_navigation a {
+  color: #ffffff; /* Kolor linku */
+}
+
+/* Zmieniamy kolor linku przy najechaniu */
+.Login_navigation a:hover {
+  color: #00ddff; /* Kolor przy najechaniu */
+}
+
+.Login_error-message {
+  color: #ff4d4d; /* Czerwony kolor dla błędu */
+  margin-top: 10px;
+  font-size: 14px;
+}

@@ -1,0 +1,98 @@
+/* Styl dla kontenera głównego */
+.login-container {
+    text-align: center; /* Wyśrodkowuje tekst (nagłówek) w poziomie */
+    margin: 0 auto; /* Ustawia marginesy na auto, aby wyśrodkować elementy w poziomie */
+  }
+  
+  /* Styl dla nagłówka */
+  h1 {
+    margin-bottom: 20px; /* Odstęp od formularza */
+  }
+  
+  /* Styl kontenera dropdown */
+  .dropdown-container {
+    position: relative;
+    width: 300px; /* Szerokość inputa */
+    margin: 0 auto; /* Wyśrodkowuje formularz w poziomie */
+  }
+  
+  /* Styl inputa */
+  input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+    margin-bottom: 10px; /* Odstęp pomiędzy inputem */
+  }
+  
+  /* Styl listy dropdown (przycisków) */
+  .dropdown-list {
+    position: absolute;
+    top: 100%; /* Ustawia listę tuż pod inputem */
+    left: 0;
+    width: 100%; /* Ustawia szerokość listy na 100% szerokości inputa */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto; /* Dodaje przewijanie, gdy lista jest za długa */
+  }
+  
+  /* Styl przycisków dropdown */
+  .dropdown-item {
+    display: block; /* Ustawia przyciski w pionie */
+    width: 100%; /* Ustawia szerokość przycisków na 100% szerokości dropdownu */
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f0f0f0; /* Kolor tła przy najechaniu */
+  }
+  
+  .dropdown-item:focus {
+    outline: none; /* Usuwa outline przy kliknięciu */
+  }
+  
+  /* Styl dla kontenera ilości (ml) */
+  .amount-container {
+    margin-top: 10px;
+  }
+  
+  /* Styl dla inputa ilości */
+  .amount-container input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+    margin-bottom: 10px; /* Odstęp poniżej pola */
+  }
+  
+  /* Styl dla przycisku Dodaj */
+  .add-button {
+    width: 106%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block; /* Dodajemy display: block, aby element był traktowany jako blokowy i wyśrodkowany */
+    margin-left: auto; /* Wyśrodkowuje przycisk w poziomie */
+    margin-right: auto; /* Wyśrodkowuje przycisk w poziomie */
+  }
+  
+  .add-button:hover {
+    background-color: #45a049; /* Zmiana koloru przycisku na ciemniejszy, gdy jest aktywny */
+  }
+  

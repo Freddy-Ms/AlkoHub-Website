@@ -1,0 +1,45 @@
+.product-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 14px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 150px;
+    border-radius: 14px;
+  }
+  
+  .product-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .product-description {
+    font-size: 14px;
+    color: #666;
+    display: block;
+    word-wrap: break-word;
+    overflow-wrap: break-word; 
+    white-space: pre-wrap;
+  }
+
+  .product-description strong {
+    margin-right: 5px;
+  }
+  
+  .product-description p {
+    word-wrap: break-word;  /* Umożliwia zawijanie długich słów */
+    overflow-wrap: break-word;  /* Dodatkowo zapewnia łamanie słów, jeśli są zbyt długie */
+    width: 100%;
+    display: block;
+  }
+
+  .product-description p span {
+    display: block; /* Każde słowo będzie w nowej linii */
+}
