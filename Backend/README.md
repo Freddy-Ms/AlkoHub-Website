@@ -1,7 +1,7 @@
+# Database
+First you need to set up a database:
+[Setup PostgreSQL database](./Database/)
 # Backend - Installation and setup
-
-To get started, follow these steps:
-[Setup PostgreSQL database first](./Database/)
 
 ## 1. Create a virtual environment and install the required dependencies:
 
