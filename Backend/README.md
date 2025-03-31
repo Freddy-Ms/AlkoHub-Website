@@ -18,7 +18,7 @@ To get started, follow these steps:
    ```
 ## 3. You are all set! To run the backend type:
    ```sh
-   run app.py
+   python app.py
    ```
 
 
