@@ -2,7 +2,7 @@
 [Click here to go to Backend setup](./Backend/)
 
 # 2.How to setup Frontend
-[Click here to go to Frontend setup](./Frontend/)\
+[Click here to go to Frontend setup](./Frontend/)
 
 # 3.Apperance of the website
 
